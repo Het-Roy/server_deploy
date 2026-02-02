@@ -1,0 +1,15 @@
+{
+  "name": "het",
+  "version": "1.0.0",
+  "description": "We are creating a REST API and we will be working on CRUD operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
