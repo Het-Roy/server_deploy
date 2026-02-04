@@ -14,11 +14,17 @@ const users = [
 ];
 
 app.get("/", (req, res) => {
-  res.send("Express server is running");
+  res.send("Het Roy");
 });
 
-app.get("/users/:user_id", (req, res) => {
-    console.log("User Request is : ",req);
+app.get("/users", (req, res) => {
+    console.log("User Request is : ",req.params);
+  res.status(200).json(users);
+});
+
+app.get("/users/:user_id/:person", (req, res) => {
+    console.log("User request is : ",req);
+    console.log("User params are : ",req.params);
   res.status(200).json(users);
 });
 
